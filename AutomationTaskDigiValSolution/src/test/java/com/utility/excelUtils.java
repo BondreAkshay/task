@@ -13,7 +13,7 @@ public class excelUtils {
 	
 	    public static void updatePassFailStatus(int rowNum, int cellNum, String data) {
 	        try {
-	    		String Path = "C:\\Users\\91797\\eclipse-workspace\\Aksay Maven Project\\AutomationTaskDigiValSolution\\TestData\\DigivalTaskResult.xlsx";
+	        	String Path = System.getProperty("user.dir")+"\\TestData\\DigivalTask.xlsx";
 	        	FileInputStream fis = new FileInputStream(Path);
 	            Workbook workbook = WorkbookFactory.create(fis);
 

@@ -38,7 +38,7 @@ public class baseTest {
 		hp.clear();
 	}
 	
-	
+	@AfterSuite
 	public void tearDown()
 	{
 		driver.quit();
